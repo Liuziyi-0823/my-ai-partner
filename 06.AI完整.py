@@ -240,7 +240,7 @@ if prompt := st.chat_input("请输入你想说的话..."):
             response = client.chat.completions.create(
                 model="deepseek-chat",
                 messages=[{"role": "system", "content": system_prompt}] + st.session_state.messages,
-                stream=False,
+                stream=True,
             )
 
             # 4. 处理流式响应
