@@ -12,7 +12,7 @@ from streamlit.commands import logo
 # 1. 页面配置与初始化
 # ==========================================
 icon_path="😚"
-Logo_Path="resources  资源/logo2.png"
+# Logo_Path="resources  资源/logo2.png"
 st.set_page_config(
     page_title="波特版AI伴侣",
     page_icon=icon_path,
@@ -20,7 +20,7 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 with st.sidebar:
-    st.logo(Logo_Path)
+    # st.logo(Logo_Path)
     st.write("嗨嗨嗨，来了")
 st.title("波特AI智能伴侣")
 # 改进点：使用 pathlib 定义路径，避免硬编码字符串拼接
